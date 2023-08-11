@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UR-AI</title>
+    <link rel="icon" href="image.ico">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>My Voice Assistant</h1>
+
+  
+    <div class="container">
+      <form
+        onsubmit="
+      event.preventDefault();
+      conversationUserAdd(document.getElementById('input-text').value);
+      openai_test();
+      "
+      >
+      <center>
+        <input type="text" id="input-text" placeholder="ask something..." />
+        <button id="submit-button">submit</button>
+        <button id="btnInit" onclick="speak();"> init audio </button>
+      </form>
+      <div id="chat-container"></div>
+    </div>
+      </center>
+        
+  </body>
+
+  <script src="script.js"></script>
+</html>
